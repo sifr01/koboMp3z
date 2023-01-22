@@ -11,36 +11,31 @@ print(f"\n Folder contents before zipping and renaming: \n {os.listdir()} \n ")
 cwd = os.getcwd()
 
 # Get all files in dir
-onlyfiles = [
+onlyFiles = [
     f for f in listdir(cwd) if isfile(join(cwd, f))
     ]
-print(onlyfiles)
+print(onlyFiles)
 
-for file in onlyfiles:
+for file in onlyFiles:
 
-    # Get the current format
+    # Get the file extension
     s = file.split(".")
     extn = s[-1]
 
+    # Dont touch any files which arent mp3 files
     if extn != 'mp3':
         print(f'Not touching {file} as it is not an mp3 file. ')
         newExtn = extn
-         
+
+    #Do work on files which are mp3 files
     elif extn == 'mp3':
         # zip the file with extension mp3
         print(f'Zipping {file}...')
-        with ZipFile(file, 'w') as zip:
+        # rename the file suffix to mp3z
+        newName = s[0]+".mp3z"
+        with ZipFile(newName, 'w') as zip:
             zip.write(file)
         print(f'Zipped {file}...')
-
-        # Change format and get new filename
-        newExtn = 'mp3z'
-        s[-1] = newExtn
-        s = '.'.join(s)
-
-        # Rename file
-        os.rename(file, s)
-        print(f"Renamed zip file extension to {s}")
         
     else:
         print(f'Oh dear, something weird will happen with {file} so I will stop the script now. ')
