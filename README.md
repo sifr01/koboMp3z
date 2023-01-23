@@ -1,5 +1,5 @@
 # koboMp3z
-Zips mp3 files and renames the file extension to mp3z, allowing them to be sideloaded and played with a Kobo as media files - ideal for audiobooks. See article [here](https://goodereader.com/blog/audiobooks/you-can-now-sideload-audiobooks-on-the-kobo-sage-libra-2-and-elipsa#disqus_thread) and [here](https://blog.the-ebook-reader.com/2021/11/10/how-to-sideload-audiobooks-and-mp3s-to-kobo-ereaders/) for more information.
+_Zips mp3 files and renames the file extension to mp3z, allowing them to be sideloaded and played with a Kobo as media files - ideal for audiobooks. See article [here](https://goodereader.com/blog/audiobooks/you-can-now-sideload-audiobooks-on-the-kobo-sage-libra-2-and-elipsa#disqus_thread) and [here](https://blog.the-ebook-reader.com/2021/11/10/how-to-sideload-audiobooks-and-mp3s-to-kobo-ereaders/) for more information._
 
 # Usage:
     python3 koboMp3z.py /path/to/directory/

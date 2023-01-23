@@ -12,7 +12,7 @@ if len(sys.argv) < 2:
 targetDir = sys.argv[1]
 
 # List folder contents before zipping and renaming
-print(f"\n Folder contents before zipping and renaming: \n {os.listdir(targetDir)} \n ")
+# print(f"\n Folder contents before zipping and renaming: \n {os.listdir(targetDir)} \n ")
 
 # Get all files in target directory
 onlyFiles = [f for f in listdir(targetDir) if isfile(join(targetDir, f))]
