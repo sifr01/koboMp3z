@@ -9,7 +9,6 @@ if len(sys.argv) < 2:
 	print("USAGE: python3 koboMp3z.py /path/to/directory/")	
 	import os
 	os._exit(1)
-
 targetDir = sys.argv[1]
 
 # List folder contents before zipping and renaming
