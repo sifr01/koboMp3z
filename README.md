@@ -11,4 +11,9 @@ Zips mp3 files and renames the file extension to mp3z, allowing them to be sidel
 
 After running the script, sideload the mp3z files onto your Kobo
 
-Information on how to listen to audiobooks on your Kobo can be found [here](https://help.kobo.com/hc/en-us/articles/4406292712471-Listen-to-audiobooks-on-your-Kobo-eReader).
+# Further information:
+
+- Information on how to listen to audiobooks on your Kobo can be found [here](https://help.kobo.com/hc/en-us/articles/4406292712471-Listen-to-audiobooks-on-your-Kobo-eReader).
+
+- Information on how to use your kobo without having to register your device can be found in my wiki [here](
+https://github.com/sifr01/wiki/wiki/Kobo-ereader----use-device-without-online-registration).
