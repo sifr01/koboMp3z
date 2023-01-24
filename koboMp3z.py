@@ -6,7 +6,7 @@ from zipfile import ZipFile
 
 # Get path to the target directroy
 if len(sys.argv) < 2:
-	print("USAGE: python3 koboMp3z.py /path/to/directory/")	
+	print("\n ! USAGE: python3 koboMp3z.py /path/to/directory/")	
 	import os
 	os._exit(1)
 targetDir = sys.argv[1]
@@ -27,12 +27,12 @@ for file in onlyFiles:
         count += 1
         break
 if count == 0:
-        print(" ! No mp3 files found in this directory.\n ! Does python have the correct permissions to work in this directory?")
+        print("\n ! No mp3 files found in this directory.\n ! Does python have the correct permissions to work in this directory?")
         exit()
 
 # # Would you now like to delete the mp3 files?
 while True:
-    yes_or_no = input("After creating the mp3z files, would you like to delete the mp3 files? Yes or No? ").lower()
+    yes_or_no = input("\n\n After creating the mp3z files, would you like to delete the mp3 files? Yes or No? ").lower()
     if yes_or_no == "yes":
         print("mp3 files will be deleted")
         break

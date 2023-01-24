@@ -8,8 +8,13 @@ _Zips mp3 files and renames the file extension to mp3z, allowing them to be side
 - The script only works on mp3 files
 - If there are no mp3 files in the folder you specify, the script will exit
 - If python doesnt have permissions to run in the folder you specify (eg. /tmp/ or /home/), python will not find any files in the folder and will exit
+- When you play the mp3 file on your PC, if it displays a picture (probably cover art) then this needs to be removed. Otherwise you wont be able to play the file using the kobo; it will crash and the kobo will restart. To fix this, BEFORE running the python script you must remove the picture (ID3 metadata). To do this in linux on the command line, install ID3v2:
+`sudo apt install id3v2`
+    - Then enter the folder using the command line and run:
+        `id3v2 -D *.mp3`
+    - Only then should you run the python script
 
-After running the script, sideload the mp3z files onto your Kobo
+After running the python script, sideload the mp3z files onto your Kobo
 
 # Further information:
 
