@@ -45,7 +45,6 @@ for file in onlyFiles:
     # Get the file extension
     s = file.split(".")
     extn = s[-1]
-    print(extn)
     # Dont touch any files which arent mp3 files
     if extn != 'mp3':
         print(f'Not touching {file} as it is not an mp3 file. ')
